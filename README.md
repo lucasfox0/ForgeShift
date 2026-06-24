@@ -26,7 +26,7 @@ A key architectural decision is to keep all scheduling and duration-estimation l
 - **FastAPI** - Modern backend framework used to build the API layer.
 - **Pydantic** - Used to define and validate all data structures throughout the application.
 - **Instructor** - Library that enables reliable structured output from the LLM using Pydantic models.
-- **Ollama** - Runs LLMs locally during development (free and private).
+- **OpenAI** - Runs LLMs locally during development.
 - **SQLite** - Lightweight database used to store plans and user feedback for learning.
 - **Typer** - Used to create a clean, professional command-line interface.
 
