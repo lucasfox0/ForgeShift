@@ -38,7 +38,7 @@ ForgeShift is designed with a clear separation between the core business logic a
 - **Core Logic** (`core/`): Contains all scheduling/prioritization and duration-estimation logic. This is the "brain" of the app and is written in plain Python modules.
 - **Interface** (`cli/`): The command-line interface that users interact with in Stage 1. It calls into the Core Logic.
 - **Data Layer**: Uses Pydantic models for all data structures and SQLite to persist plans and feedback.
-- **LLM Integration**: Uses the Instructor library to communicate with Ollama for generating plans and improving estimates over time.
+- **LLM Integration**: Uses the OpenAI API for generating plans and improving estimates over time.
 
 Data flows from the user -> CLI -> Core Logic -> LLM (through Instructor) -> back through the Core Logic -> stored in SQLite -> returned to the user.
 
