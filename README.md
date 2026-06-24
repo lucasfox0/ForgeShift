@@ -23,7 +23,7 @@ A key architectural decision is to keep all scheduling and duration-estimation l
 ## Tech Stack
 
 - **Python** - Primary programming language for the entire backend and core logic.
-- **FastAPI** - Modern backend framework used to build the API layer (even in Stage 1).
+- **FastAPI** - Modern backend framework used to build the API layer.
 - **Pydantic** - Used to define and validate all data structures throughout the application.
 - **Instructor** - Library that enables reliable structured output from the LLM using Pydantic models.
 - **Ollama** - Runs LLMs locally during development (free and private).
