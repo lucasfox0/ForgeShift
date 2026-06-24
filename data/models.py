@@ -7,3 +7,10 @@ class ShiftInput(BaseModel):
     shift_end: str
     context: str
     tasks: list[str]
+
+class PlannedTask(BaseModel):
+    name: str
+    duration: int
+
+class Plan(BaseModel):
+    tasks: list[PlannedTask]
