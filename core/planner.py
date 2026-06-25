@@ -18,9 +18,3 @@ def generate_plan(shift_input):
     )
 
     return plan
-
-if __name__ == "__main__":
-    from cli.input import get_input
-    shift_input = get_input()
-    result = generate_plan(shift_input)
-    print(result.output_text)
